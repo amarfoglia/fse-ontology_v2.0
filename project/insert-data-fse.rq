@@ -1,0 +1,818 @@
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX tag: <http://www.holygoat.co.uk/owl/redwood/0.1/tags/>
+PREFIX api: <http://purl.org/linked-data/api/vocab#>
+PREFIX org: <http://www.w3.org/ns/org#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX fse: <https://fse.ontology/>
+
+INSERT DATA {
+    GRAPH <https://fse.ontology/> {
+        <#rad_pfiorentino>
+            a fse:radiologyReport ;
+            fse:body "Referto di radiologia anca paziente P. Fiorentino" ;
+            #fse:hasCode <loinc:68604> ;
+            fse:confidentialityLevel <tag:stardog:api:Normal> ;
+            fse:languageCode "it-IT" ;
+            fse:realmCode "IT" ;
+            fse:versionNumber 1 ;
+            fse:refersTo <tag:stardog:api:#FRNPSC56S51F839H> ;
+            fse:hasHumanAuthor <tag:stardog:api:#doctor_abarese> ;
+            fse:hasBeenSigned <tag:stardog:api:#sign_rad_pfiorentino_abarese> ;
+            fse:componentOf <tag:stardog:api:#ausl> ;
+            fse:hasCustodian <tag:stardog:api:#ausl> ;
+            fse:createdAt "2015-10-05T22:15:04" ;
+            fse:hasSection <tag:stardog:api:#performedexam_fiorentino> ;
+            fse:hasSection <tag:stardog:api:#rad_report_fiorentino> .
+        
+        <#vac_pfiorentino>
+            a fse:immunization ;
+            fse:confidentialityLevel <tag:stardog:api:Normal> ;
+            #fse:hasCode <loinc:87273-9> ;
+            fse:languageCode "it-IT" ;
+            fse:realmCode "IT" ;
+            fse:versionNumber 1 ;
+            fse:refersTo <tag:stardog:api:#FRNPSC56S51F839H> ;
+            fse:hasHumanAuthor <tag:stardog:api:#doctor_abarese> ;
+            fse:hasCustodian <tag:stardog:api:#ausl> ;
+            fse:hasLatestVersion <tag:stardog:api:#vac_pfiorentino> ;
+            fse:createdAt "2017-10-05T22:15:04" ;
+            fse:hasSection <tag:stardog:api:#immunization_fiorentino> ;
+            fse:hasSection <tag:stardog:api:#immunization_fiorentino_2> .
+        
+        <#lab_bcosta>
+            a fse:laboratoryMedicineReport ;
+            fse:languageCode "it-IT" ;
+            fse:realmCode "IT" ;
+            fse:hasCode <loinc:11502-2> ;
+            fse:versionNumber 1 ;
+            fse:confidentialityLevel <tag:stardog:api:Normal> ;
+            fse:refersTo <tag:stardog:api:#CSTBRN86H62G273H> ;
+            fse:hasHumanAuthor <tag:stardog:api:#nurse_alorenzo> ;
+            fse:hasCustodian <tag:stardog:api:#ausl> ;
+            fse:hasLatestVersion <tag:stardog:api:#lab_bcosta> ;
+            fse:hasSection <tag:stardog:api:#specialty_bcosta> ;
+            fse:createdAt "2018-05-28T08:51:10" .
+
+        <#rad_bcosta>
+            a fse:radiologyReport ;
+            fse:body "Referto di valutazione ecografica paziente B. Costa" ;
+            #fse:hasCode <loinc:68604> ;
+            fse:confidentialityLevel <tag:stardog:api:Very_Restricted> ;
+            fse:languageCode "it-IT" ;
+            fse:realmCode "IT" ;
+            fse:versionNumber 1 ;
+            fse:refersTo <tag:stardog:api:#CSTBRN86H62G273H> ;
+            fse:hasHumanAuthor <tag:stardog:api:#doctor_aparatore> ;
+            fse:hasCustodian <tag:stardog:api:#ausl> ;
+            fse:createdAt "2008-12-24T20:14:00" ;
+            fse:hasSection <tag:stardog:api:#performedexam_costa> ;
+            fse:hasSection <tag:stardog:api:#rad_report_costa> .
+        
+        <#vps_bcosta>
+            a fse:firstAidReport ;
+            fse:body "Referto di primo soccorso paziente B. Costa" ;
+            fse:languageCode "it-IT" ;
+            fse:realmCode "IT" ;
+            fse:versionNumber 1 ;
+            fse:confidentialityLevel <tag:stardog:api:Normal> ;
+            fse:refersTo <tag:stardog:api:#CSTBRN86H62G273H> ;
+            fse:hasHumanAuthor <tag:stardog:api:#nurse_gvanni> ;
+            fse:hasResponsible <tag:stardog:api:#doctor_aparatore> ;
+            fse:hasBeenSigned <tag:stardog:api:#sign_vpsCosta_aparatore> ;
+            fse:hasCustodian <tag:stardog:api:#ssn> ;
+            fse:hasLatestVersion <tag:stardog:api:#vps_bcosta> ;
+            fse:hasSection <tag:stardog:api:#reason_costa> ;
+            fse:hasSection <tag:stardog:api:#discharge_costa> ;
+            fse:hasSection <tag:stardog:api:#triage_costa> ;
+            fse:hasSection <tag:stardog:api:#transport_costa> ;
+            fse:createdAt "2014-07-20T21:41:54" .
+        
+        <#vps_bcosta_2>
+            a fse:firstAidReport ;
+            fse:body "Referto di primo soccorso paziente B. Costa" ;
+            fse:languageCode "it-IT" ;
+            fse:realmCode "IT" ;
+            fse:versionNumber 1 ;
+            fse:confidentialityLevel <tag:stardog:api:Normal> ;
+            fse:refersTo <tag:stardog:api:#CSTBRN86H62G273H> ;
+            fse:hasHumanAuthor <tag:stardog:api:#nurse_gvanni> ;
+            fse:hasResponsible <tag:stardog:api:#doctor_aparatore> ;
+            fse:hasBeenSigned <tag:stardog:api:#sign_vpsCosta_aparatore> ;
+            fse:hasCustodian <tag:stardog:api:#ssn> ;
+            fse:hasLatestVersion <tag:stardog:api:#vps_bcosta> ;
+            fse:hasSection <tag:stardog:api:#reason_costa> ;
+            fse:hasSection <tag:stardog:api:#discharge_costa> ;
+            fse:hasSection <tag:stardog:api:#triage_costa> ;
+            fse:hasSection <tag:stardog:api:#transport_costa_2> ;
+            fse:createdAt "2014-07-20T21:41:54" .
+        
+        <#vac_bcosta>
+            a fse:immunization ;
+            fse:validUntil "2022-05-05T07:35:58"^^xsd:dateTime ;
+            fse:confidentialityLevel <tag:stardog:api:Restricted> ;
+            #fse:hasCode <loinc:87273-9> ;
+            fse:languageCode "it-IT" ;
+            fse:realmCode "IT" ;
+            fse:versionNumber 1 ;
+            fse:refersTo <tag:stardog:api:#CSTBRN86H62G273H> ;
+            fse:hasHumanAuthor <tag:stardog:api:#doctor_abarese> ;
+            fse:hasCustodian <tag:stardog:api:#aifa_totem> ;
+            fse:hasLatestVersion <tag:stardog:api:#vac_bcosta> ;
+            fse:createdAt "2021-08-08T14:12:50" ;
+            fse:hasSection <tag:stardog:api:#immunization_costa> .
+        
+        <#rsa_drossi>
+            a fse:outpatientSpecialistReport ;
+            fse:hasSpecialistReportType "Ortopedia" ;
+            #fse:hasCode <loinc:11488-4> ;
+            fse:languageCode "it-IT" ;
+            fse:realmCode "IT" ;
+            fse:versionNumber 1 ;
+            fse:confidentialityLevel <tag:stardog:api:Normal> ;
+            fse:refersTo <tag:stardog:api:#RSSDNI48C45C573H> ;
+            fse:hasHumanAuthor <tag:stardog:api:#doctor_gmoccia> ;
+            fse:hasCustodian <tag:stardog:api:#auser> ;
+            fse:hasLatestVersion <tag:stardog:api:#rsa_drossi> ;
+            fse:hasSection <tag:stardog:api:#service_rossi> ;
+            fse:hasSection <tag:stardog:api:#os_report_rossi> ;
+            fse:createdAt "2020-07-15T07:35:58" .
+
+        <#pss_vpinto>
+            a fse:summaryHealthProfile ;
+            fse:hasCode <loinc:60591-5> ;
+            fse:body "Profilo Sanitario Sintetico paziente V. Pinto" ;
+            fse:languageCode "it-IT" ;
+            fse:realmCode "IT" ;
+            fse:versionNumber 1 ;
+            fse:confidentialityLevel <tag:stardog:api:Normal> ;
+            fse:refersTo <tag:stardog:api:#VRNPNT83T45F205V> ;
+            fse:hasDeviceAuthor <tag:stardog:api:#ssn_totem> ;
+            fse:hasCustodian <tag:stardog:api:#ssn> ;
+            fse:hasLatestVersion <tag:stardog:api:#pss_vpinto> ;
+            fse:hasSection <tag:stardog:api:#alerts_vpinto> ;
+            fse:hasSection <tag:stardog:api:#medications_vpinto> ;
+            fse:hasSection <tag:stardog:api:#diseases_vpinto> ;
+            fse:hasSection <tag:stardog:api:#pregnancies_vpinto> ;
+            fse:createdAt "2020-11-22T22:10:14" .
+        
+        <#ldo_fpisano>
+            a fse:hospitalDischargeLetter ;
+            fse:languageCode "it-IT" ;
+            #fse:hasCode <loinc:34105-7> ;
+            fse:realmCode "IT" ;
+            fse:versionNumber 1 ;
+            fse:confidentialityLevel <tag:stardog:api:Restricted> ;
+            fse:refersTo <tag:stardog:api:#PSNFRU97L29G702B> ;
+            fse:hasHumanAuthor <tag:stardog:api:#doctor_aarcuri> ;
+            fse:hasCustodian <tag:stardog:api:#ordinemedici> ;
+            fse:hasSection <tag:stardog:api:#discharge_diagnosis_ldo_fpisano> ;
+            fse:hasSection <tag:stardog:api:#reason_admission_ldo_fpisano> ;
+            fse:hasSection <tag:stardog:api:#progression_ldo_fpisano> ;
+            fse:hasLatestVersion <tag:stardog:api:#ldo_fpisano> ;
+            fse:createdAt "2012-10-30T14:31:21" .
+        
+        <#de_aesposito>
+            a fse:exemptionReport ;
+            fse:body "Documento di esenzione paziente A. Esposito" ;
+            fse:languageCode "it-IT" ;
+            fse:realmCode "IT" ;
+            #fse:hasCode <loinc:57827-8> ;
+            fse:versionNumber 1 ;
+            fse:confidentialityLevel <tag:stardog:api:Normal> ;
+            fse:hasBeenSigned <tag:stardog:api:#sign_deEsposito_aparatore> ;
+            fse:confidentialityLevel <tag:stardog:api:Normal> ;
+            fse:refersTo <tag:stardog:api:#SPSNMR60S42F839P> ;
+            fse:hasDeviceAuthor <tag:stardog:api:#ausl_totem> ;
+            fse:hasCustodian <tag:stardog:api:#ausl> ;
+            fse:hasLatestVersion <tag:stardog:api:#de_aesposito> ;
+            fse:hasSection <tag:stardog:api:#e_aesposito> ;
+            fse:createdAt "2010-10-12T14:12:35" .
+        
+        <#prescription_acalabrese>
+            a fse:specialist ;
+            fse:body "Prescrizione visita cardiologica paziente A. Calabrese" ;
+            fse:languageCode "it-IT" ;
+            fse:realmCode "IT" ;
+            fse:versionNumber 1 ;
+            fse:confidentialityLevel <tag:stardog:api:Normal> ;
+            fse:hasDiagnosis <obo:NCIT_C18020> ;
+            fse:refersTo <tag:stardog:api:#CLBDLA93S07D969X> ;
+            fse:hasHumanAuthor <tag:stardog:api:#doctor_aarcuri> ;
+            fse:hasCustodian <tag:stardog:api:#ausl> ;
+            fse:hasPriority :A ;
+            fse:createdAt "2021-10-23T18:30:15" .
+
+        <#rsa_acalabrese>
+            a fse:outpatientSpecialistReport ;
+            fse:hasSpecialistReportType "Cardiologia" ;
+            #fse:hasCode <loinc:11488-4> ;
+            fse:languageCode "it-IT" ;
+            fse:realmCode "IT" ;
+            fse:versionNumber 1 ;
+            fse:inFulfillmentOf <tag:stardog:api:#prescription_acalabrese> ;
+            fse:confidentialityLevel <tag:stardog:api:Normal> ;
+            fse:refersTo <tag:stardog:api:#CLBDLA93S07D969X> ;
+            fse:hasHumanAuthor <tag:stardog:api:#doctor_gmoccia> ;
+            fse:hasCustodian <tag:stardog:api:#auser> ;
+            fse:hasLatestVersion <tag:stardog:api:#rsa_calabrese> ;
+            fse:hasSection <tag:stardog:api:#service_acalabrese> ;
+            fse:hasSection <tag:stardog:api:#os_report_acalabrese> ;
+            fse:createdAt "2020-07-15T07:35:58" .
+
+        <#pharma_acalabrese>
+            a fse:pharma ;
+            fse:hasQuantity 2 ;
+            fse:body "Documento di prescrizione medica per Coumadin paziente A. Calabrese" ;
+            fse:languageCode "it-IT" ;
+            fse:realmCode "IT" ;
+            fse:versionNumber 1 ;
+            fse:confidentialityLevel <tag:stardog:api:Normal> ;
+            fse:refersTo <tag:stardog:api:#CLBDLA93S07D969X> ;
+            fse:hasHumanAuthor <tag:stardog:api:#doctor_aarcuri> ;
+            fse:hasCustodian <tag:stardog:api:#ausl> ;
+            fse:hasLatestVersion <tag:stardog:api:#prescription_acalabrese> ;
+            fse:consumable obo:DRON_00080857 ;
+            fse:consumable obo:DRON_00080856 ;
+            fse:consumable obo:DRON_00080858 ;
+            fse:hasPriority :EL ;
+            fse:createdAt "2021-10-23T18:30:15" .
+        # -------------------------
+        # SIGN
+        # -------------------------
+        <#sign_rad_pfiorentino_abarese>
+            a fse:sign ;
+            fse:effectiveTime "2015-10-05T22:15:05"^^xsd:dateTime ;
+            fse:hasLegalAuthenticator <tag:stardog:api:#doctor_abarese> .
+
+        <#sign_vpsCosta_aparatore>
+            a fse:sign ;
+            fse:effectiveTime "2021-10-23T09:14:00"^^xsd:dateTime ;
+            fse:hasLegalAuthenticator <tag:stardog:api:#doctor_aparatore> .
+        
+        <#sign_deEsposito_aparatore>
+            a fse:sign ;
+            fse:effectiveTime "2021-10-23T09:14:00"^^xsd:dateTime ;
+            fse:hasLegalAuthenticator <tag:stardog:api:#doctor_aparatore> .
+        # -------------------------
+        # SECTIONS
+        # -------------------------
+        <#diseases_vpinto>
+            a fse:historyOfDiseases ;
+            fse:title "Lista dei problemi" ;
+            #fse:hasCode <loinc:10162-6> ;
+            fse:includesDisease obo:DOID_1578 ;
+            fse:includesDisease obo:DOID_1579 .
+        
+        <#e_aesposito>
+            a fse:exemption ;
+            fse:title "Esenzione" ;
+            fse:body "Il documento solleva il paziente A. Esposito dall'obbligo vaccinale poichè si ritiene possa presentare complicazioni dovute a problematiche di natura cardiaca" .
+
+        <#discharge_diagnosis_ldo_fpisano> 
+            a fse:dischargeDiagnosis ;
+            #fse:hasCode <loinc:11535-2> ;
+            fse:title "Dimissione" ;
+            fse:body "Dimissione avvenuta post completo recupero" .
+        
+        <#reason_admission_ldo_fpisano> 
+            a fse:reasonForAdmission ;
+            #fse:hasCode <loinc:46241-6> ;
+            fse:title "Motivo del ricovero" ;
+            fse:body "Ammissione avvenuta in seguito ad insufficienza renale" .
+        
+        <#progression_ldo_fpisano> 
+            a fse:progression ;
+            #fse:hasCode <loinc:8648-8> ;
+            fse:title "Decorso ospedaliero" ;
+            fse:body "Ricovero di 2 settimane, paziente sottoposto a trattamento antibiotico per prima settimana ad alto dosaggio, ridotto per la seconda settimana" .
+        
+        <#alerts_vpinto>
+            a fse:alerts ;
+            fse:title "Asma estrinseco" ;
+            #fse:hasCode <loinc:48765-2> ;
+            # fse:includesAllergy <obo:DOID_0060532> ;
+            fse:includesAllergy <obo:DOID_0080811> ;
+            fse:start "2022-02-02T07:35:58"^^xsd:dateTime ;
+            fse:end "2022-02-02T14:35:58"^^xsd:dateTime .
+        
+        <#pregnancies_vpinto>
+            a fse:historyOfPregnancies ;
+            fse:title "Gravidanze e parto" ;
+            #fse:hasCode <loinc:10162-6> ;
+            fse:includesPregnancy <tag:stardog:api:#pregnancy_vpinto> ;
+            fse:includesPregnancy <tag:stardog:api:#pregnancy_vpinto_2> .
+        
+        <#medications_vpinto>
+            a fse:medications ;
+            fse:title "Terapie" ;
+            #fse:hasCode <loinc:10160-0> ;
+            fse:includesTherapy <tag:stardog:api:#antihistamine_vpinto> ;
+            fse:includesTherapy <tag:stardog:api:#antihistamine_vpinto2> .
+        
+        <#medications_clori>
+            a fse:medications ;
+            fse:title "Terapie" ;
+            fse:includesTherapy <tag:stardog:api:#fugalinfectiontreatment_clori> .
+        
+        <#medications_acalbrese>
+            a fse:medications ;
+            fse:title "Terapie" ;
+            fse:includesTherapy <tag:stardog:api:#gastricacidity_acalabrese> .
+
+        <#performedexam_fiorentino>
+            a fse:performedExam ;
+            #fse:hasCode <loinc:55111-9> ;
+            fse:title "Esame eseguito" ;
+            fse:body "Radiografia" .
+        
+        <#rad_report_fiorentino>
+            a fse:radReport ;
+            #fse:hasCode <loinc:18782-3> ;
+            fse:title "Referto" ;
+            fse:body "Non sono state evidenziate anomalie" .
+        
+        <#performedexam_costa>
+            a fse:performedExam ;
+            fse:title "Esame eseguito" ;
+            #fse:hasCode <loinc:55111-9> ;
+            fse:title "Ecografia osteoarticolare Costa" .
+        
+        <#rad_report_costa>
+            a fse:radReport ;
+            #fse:hasCode <loinc:18782-3> ;
+            fse:title "Referto" ;
+            fse:body "L'indagine mirata alla valutazione del LCU non ha evidenziato aspetti ecografici riferibili a lesione: il legamento collaterale ulnare si presenta diffusamente ipoecogeno in relazione ad edema interstiziale. Nei limiti il LCR" .
+        
+        <#immunization_fiorentino>
+            a fse:immunizationCard ;
+            #fse:hasCode <loinc:11369-6> ;
+            fse:title "Scheda della singola Vaccinazione." ;
+            fse:body "Somministrata vaccinazione anti SARS-COV2" ;
+            fse:includesAdministration <tag:stardog:api:#substance_administration_fiorentino> .
+        
+        <#immunization_fiorentino_2>
+            a fse:immunizationCard ;
+            #fse:hasCode <loinc:11369-6> ;
+            fse:title "Scheda della singola Vaccinazione." ;
+            fse:body "Somministrata vaccinazione anti SARS-COV2" ;
+            fse:includesAdministration <tag:stardog:api:#substance_administration_fiorentino_2> .
+        
+        <#immunization_costa>
+            a fse:immunizationCard ;
+            #fse:hasCode <loinc:11369-6> ;
+            fse:title "Scheda della singola Vaccinazione." ;
+            fse:body "Somministrata vaccinazione anti SARS-COV2" ;
+            fse:includesAdministration <tag:stardog:api:#substance_administration_costa> .
+        
+        <#specialty_bcosta>
+            a fse:specialty ;
+            fse:hasCode <loinc:18717-9> ;
+            fse:title "Specialità" ;
+            fse:hasResult <tag:stardog:api:#test_bcosta> .
+         
+        <#reason_costa>
+            a fse:reasonForVisit ;
+            #fse:hasCode <loinc:46239-0> ;
+            fse:title "Motivo della visita" ;
+            fse:mainProblem <tag:stardog:api:#observation_costa> ;
+            fse:body "Incidente sportivo" .
+         
+        <#discharge_costa>
+            a fse:discharge ;
+            #fse:hasCode <loinc:18842-5> ;
+            fse:title "Dimissione" ;
+            fse:body "Trauma distorsivo alla 1 MTC-F con lesione di Stener. Non fratture nè deficit v/n. Mantiene tutore dedicato con blocco 1° MTC-F per 20 gg";
+            fse:effectiveTime "2020-08-15T07:35:58"^^xsd:dateTime ;
+            fse:hasPerformer <tag:stardog:api:#doctor_aparatore> ;
+            fse:transfer <#ospedalembufalini>;
+            fse:statusCode "Completed" .
+        
+        <#triage_costa>
+            a fse:triage ;
+            fse:title "Triage" ;
+            #fse:hasCode <loinc:54094-8> ;
+            fse:hasPerformer <tag:stardog:api:#doctor_aparatore> ;
+            fse:effectiveTime "2020-07-15T07:35:58"^^xsd:dateTime ;
+            fse:body "Rischio di compromissione delle funzioni vitali. Condizione stabile con rischio evolutivo";
+            fse:statusCode "Completed" .
+        
+        <#transport_costa>
+            a fse:modeOfTransport ;
+            fse:title "Modalità di trasporto" ;
+            #fse:hasCode <loinc:11459-5> ;
+            fse:body "Nessun evento avverso durante il trasporto";
+            fse:cameWith <tag:stardog:api:#plate_ca128td> ;
+            fse:hasMissionManager <tag:stardog:api:#doctor_aparatore>;
+            fse:statusCode "Completed" .
+        
+        <#service_rossi>
+            a fse:services ;
+            fse:title "Prestazioni" ;
+            fse:body "" ;
+            #fse:hasCode <loinc:62387-6> ;
+            fse:hasProcedure <obo:NCIT_C15329> .
+        
+        <#os_report_rossi>
+            a fse:osReport ;
+            fse:title "Referto" ;
+            #fse:hasCode <loinc:47045-0> ;
+            fse:body "Trauma distorsivo distorsivo del ginocchio sinistro. Evidenziata la lesione del legamento crociato anteriore" .
+        
+        <#service_acalabrese>
+            a fse:services ;
+            fse:title "Prestazioni" ;
+            fse:body "" ;
+            #fse:hasCode <loinc:62387-6> ;
+            fse:hasProcedure <obo:NCIT_C18020> .
+        
+        <#os_report_acalabrese>
+            a fse:osReport ;
+            fse:title "Referto" ;
+            #fse:hasCode <loinc:47045-0> ;
+            fse:body "Evidenziata leggera fibrillazione atriale asintomatica, continuare con assunzione di Coumadin" .
+        
+        # OBSERVATION (VPS)
+        # -------------------------
+        <#observation_costa>
+            a fse:observation ;
+            fse:hasSymptom <obo:SYMP_0000550> ;
+            #fse:hasCode <loinc:57833-6> ;
+            fse:body "" ;
+            fse:statusCode "Completed" .
+        # -------------------------
+        # TEST
+        # -------------------------
+        <#test_bcosta>
+            a fse:test ;
+            fse:name "Prelievo ematico" ;
+            fse:material "Sangue" ;
+            fse:unit "mg" ;
+            fse:method "ECLIA-Standardizzato ROCHE" ;
+            fse:result "Non si segnalano problematiche" ;
+            fse:hasLatestVersion <tag:stardog:api:#test_bcosta> .
+        # -------------------------
+        # SUBSTANCE_ADMINISTRATION
+        # -------------------------
+        <#substance_administration_fiorentino>
+            a fse:substanceAdministration ;
+            fse:approachSiteCode "braccio dx" ;
+            fse:doseQuantity "0.05" ;
+            fse:unit "ml" ;
+            fse:effectiveTime "2020-07-15T07:35:58"^^xsd:dateTime ; 
+            fse:validUntil "2021-08-01T07:35:58"^^xsd:dateTime ;
+            fse:prevents obo:DOID_0080600 ;
+            fse:consumable obo:DRON_00020458 ;
+            fse:via obo:OMIT_0008394 ;
+            fse:boosterOf <tag:stardog:api:#booster_fiorentino_1> ;
+            fse:participant <tag:stardog:api:#doctor_abarese>.
+
+        <#substance_administration_fiorentino_2>
+            a fse:substanceAdministration ;
+            fse:effectiveTime "2021-01-15T07:35:58"^^xsd:dateTime ; 
+            fse:validUntil "2022-02-02T07:35:58"^^xsd:dateTime;
+            fse:approachSiteCode "braccio dx" ;
+            fse:doseQuantity "0.05" ;
+            fse:unit "ml" ;
+            fse:prevents obo:DOID_0080600 ;
+            fse:consumable obo:DRON_00020458 ;
+            fse:via obo:OMIT_0008394 ;
+            fse:boosterOf <tag:stardog:api:#booster_fiorentino_2> ;
+            fse:participant <tag:stardog:api:#doctor_abarese>.
+
+        <#substance_administration_vpinto>
+            a fse:substanceAdministration ;
+            fse:approachSiteCode "braccio dx" ;
+            fse:doseQuantity "0.25" ;
+            fse:unit "ml" ;
+            fse:prevents obo:DOID_0080600 ;
+            fse:consumable obo:DRON_00020458 ;
+            fse:via obo:OMIT_0008394 .
+
+        <#substance_administration_clori>
+            a fse:substanceAdministration ;
+            fse:approachSiteCode "braccio sx" ;
+            fse:doseQuantity "16" ;
+            fse:unit "ml" ;
+            fse:prevents obo:DOID_0080600 ;
+            fse:consumable obo:DRON_00020458 ;
+            fse:via obo:OMIT_0008394 .
+        
+        <#substance_administration_acalabrese>
+            a fse:substanceAdministration ;
+            fse:approachSiteCode "braccio dx" ;
+            fse:doseQuantity "0.5" ;
+            fse:unit "ml" ;
+            fse:prevents obo:DOID_0080600 ;
+            fse:consumable obo:DRON_00020458 ;
+            fse:via obo:OMIT_0008394 .
+        # -------------------------
+        # BOOSTER
+        # -------------------------
+        <#booster_fiorentino_1>
+            a fse:booster ;
+            fse:boosterNum 1 ;
+            fse:nextBooster "2021-01-15T07:35:58"^^xsd:dateTime;
+            fse:statusCode "Completed" .
+        
+        <#booster_fiorentino_2>
+            a fse:booster ;
+            fse:boosterNum 2 ;
+            fse:statusCode "Completed" .
+        # -------------------------
+        # PREGNANCIES
+        # -------------------------
+        <#pregnancy_vpinto>
+            a fse:pregnancy ;
+            fse:start "2019-01-02T07:35:58"^^xsd:dateTime ;
+            fse:end "2019-10-02T07:35:58"^^xsd:dateTime ;
+            fse:result true .
+        
+        <#pregnancy_vpinto_2>
+            a fse:pregnancy ;
+            fse:start "2022-02-02T07:35:58"^^xsd:dateTime ;
+            fse:end "2022-11-02T07:35:58"^^xsd:dateTime ;
+            fse:result true .
+        # -------------------------
+        # THERAPIES
+        # -------------------------
+        <#antihistamine_vpinto>
+            a fse:therapy ;
+            fse:start "2021-09-24T07:35:58"^^xsd:dateTime ;
+            fse:end "2021-10-24T07:35:58"^^xsd:dateTime ;
+            fse:dailyQuantity 1 ;
+            fse:statusCode "Completed" ;
+            fse:includesAdministration <#substance_administration_vpinto> .
+        <#antihistamine_vpinto2>
+            a fse:therapy ;
+            fse:start "2022-10-20T07:35:58"^^xsd:dateTime ;
+            fse:end "2022-12-17T07:35:58"^^xsd:dateTime ;
+            fse:dailyQuantity 1 ;
+            fse:statusCode "Active" ;
+            fse:includesAdministration <#substance_administration_vpinto> .
+        <#fugalinfectiontreatment_clori>
+            a fse:therapy ;
+            fse:start "2022-08-08T07:35:58"^^xsd:dateTime ;
+            fse:end "2022-10-24T07:35:58"^^xsd:dateTime ;
+            fse:dailyQuantity 2 ;
+            fse:statusCode "Active" ;
+            fse:includesAdministration <#substance_administration_clori> .
+        <#gastricacidity_acalabrese>
+            a fse:therapy ;
+            fse:start "2022-09-10T07:35:58"^^xsd:dateTime ;
+            fse:end "2022-10-24T07:35:58"^^xsd:dateTime ;
+            fse:dailyQuantity 2 ;
+            fse:statusCode "Active" ;
+            fse:includesAdministration <#substance_administration_acalabrese> .
+        # -------------------------
+        # DEVICES
+        # -------------------------
+        <#ultron>
+            a fse:device ;
+            fse:hasIdentifier "ultron" .
+        <#ssn_totem>
+            a fse:device ;
+            fse:hasIdentifier "ssn_totem" .
+        <#ausl_totem>
+            a fse:device ;
+            fse:hasIdentifier "ausl_totem" .
+        <#aifa_totem>
+            a fse:device ;
+            fse:hasIdentifier "aifa_totem" .
+        # -------------------------
+        # VEHICLES
+        # -------------------------
+        <#plate_ca128td>
+            a fse:vehicle ;
+            fse:vehicleType "Ambulance" ;
+            fse:plate "CA128TD" .
+        <#plate_de843pr>
+            a fse:vehicle ;
+            fse:vehicleType "Helicopter" ;
+            fse:plate "DE843PR" .
+        <#plate_tu235rp>
+            a fse:vehicle ;
+            fse:vehicleType "Ambulance" ;
+            fse:plate "TU235RP" .
+        # -------------------------
+        # PATIENTS
+        # -------------------------
+        <#FRNPSC56S51F839H>
+            a fse:patient ;
+            foaf:firstName "Priscilla" ;
+            foaf:lastName "Fiorentino" ;
+            foaf:birthday "11/11/1956" ;
+            fse:fiscalCode "FRNPSC56S51F839H" ;
+            fse:healthCardNumber "80380800301569845351" ;
+            fse:isOrganDonor true ; 
+            fse:hasFamilyDoctor <tag:stardog:api:#doctor_abarese> .
+        <#RSSDNI48C45C573H>
+            a fse:patient ;
+            foaf:firstName "Diana" ;
+            foaf:lastName "Rossi" ;
+            foaf:birthday "05/03/1948" ;
+            fse:isOrganDonor true ;
+            fse:fiscalCode "RSSDNI48C45C573H" ;
+            fse:healthCardNumber "80380800308945237892" .
+        <#CSTBRN86H62G273H>
+            a fse:patient ;
+            foaf:firstName "Bruna" ;
+            foaf:lastName "Costa" ;
+            foaf:birthday "22/06/1986" ;
+            fse:fiscalCode "CSTBRN86H62G273H" ;
+            fse:healthCardNumber "80380800304875162594" ;
+            fse:isOrganDonor false ;
+            fse:hasFamilyDoctor <tag:stardog:api:#doctor_abarese> .
+        <#VRNPNT83T45F205V>
+            a fse:patient ;
+            foaf:firstName "Veronica" ;
+            foaf:lastName "Pinto" ;
+            foaf:birthday "05/12/1983" ;
+            fse:fiscalCode "VRNPNT83T45F205V" ;
+            fse:isOrganDonor false ;
+            fse:healthCardNumber "80380800301126596519" .
+        <#PSNFRU97L29G702B>
+            a fse:patient ;
+            foaf:firstName "Furio" ;
+            foaf:lastName "Pisano" ;
+            foaf:birthday "29/07/1997" ;
+            fse:fiscalCode "PSNFRU97L29G702B" ;
+            fse:isOrganDonor false ;
+            fse:healthCardNumber "803808003099956423156" .
+        <#SPSNMR60S42F839P>
+            a fse:patient ;
+            foaf:firstName "Anna Maria" ;
+            foaf:lastName "Esposito" ;
+            foaf:birthday "02/11/1960" ;
+            fse:fiscalCode "SPSNMR60S42F839P" ;
+            fse:isOrganDonor false ;
+            fse:healthCardNumber "803808003045876589452" .
+        <#CLBDLA93S07D969X>
+            a fse:patient ;
+            foaf:firstName "Adele" ;
+            foaf:lastName "Calabresi" ;
+            foaf:birthday "07/11/1993" ;
+            fse:fiscalCode "CLBDLA93S07D969X" ;
+            fse:healthCardNumber "803808003087512326896" ;
+            fse:isOrganDonor false ;
+            fse:hasFamilyDoctor <tag:stardog:api:#doctor_aarcuri> .
+        <#LROCAI84C04G702E>
+            a fse:patient ;
+            foaf:firstName "Caio" ;
+            foaf:lastName "Lori" ;
+            foaf:birthday "04/03/1984" ;
+            fse:fiscalCode "LROCAI84C04G702E" ;
+            fse:isOrganDonor true ;
+            fse:healthCardNumber "803808003045852135897" .
+        # -------------------------
+        # HEALTH WORKERS
+        # -------------------------
+        <#clucchese>
+            a fse:healthWorker ;
+            fse:worksIn <tag:stardog:api:#sedeaifa> ;
+            foaf:firstName "Cosimo" ;
+            foaf:lastName "Lucchese" ;
+            foaf:birthday "16/08/1963" .
+        <#dtrentino>
+            a fse:healthWorker ;
+            fse:worksIn <tag:stardog:api:#ospedalembufalini> ;
+            foaf:firstName "Divo" ;
+            foaf:lastName "Trentino" ;
+            foaf:birthday "06/04/1993" .
+        # -------------------------
+        # DOCTORS
+        # -------------------------
+        <#doctor_abarese>
+            a fse:doctor ;
+            foaf:firstName "Antonia" ;
+            foaf:lastName "Barese" ;
+            foaf:birthday "11/07/1977" ;
+            fse:belongsTo <tag:stardog:api:#ordinemedici> .
+        <#doctor_aarcuri>
+            a fse:doctor ;
+            foaf:firstName "Ambrosino" ;
+            foaf:lastName "Arcuri" ;
+            foaf:birthday "17/07/1966" ;
+            fse:belongsTo <tag:stardog:api:#ordinemedici> .
+        <#doctor_cbelotti>
+            a fse:doctor ;
+            foaf:firstName "Carlotta" ;
+            foaf:lastName "Belotti" ;
+            foaf:birthday "06/06/1967" ;
+            fse:belongsTo <tag:stardog:api:#aifa> .
+        <#doctor_aparatore>
+            a fse:doctor ;
+            foaf:firstName "Alessandro" ;
+            foaf:lastName "Paratore" ;
+            foaf:birthday "22/10/1959" ;
+            fse:belongsTo <tag:stardog:api:#ssn> .
+        <#doctor_gmoccia>
+            a fse:doctor ;
+            foaf:firstName "Giovanni" ;
+            foaf:lastName "Moccia" ;
+            foaf:birthday "12/08/1974" ;
+            fse:belongsTo <tag:stardog:api:#auser> .
+        # -------------------------
+        # NURSES
+        # -------------------------
+        <#nurse_alorenzo>
+            a fse:nurse ;
+            foaf:firstName "Alfredina" ;
+            foaf:lastName "Lorenzo" ;
+            foaf:birthday "18/01/1959" ;
+            fse:belongsTo <tag:stardog:api:#ausl> .
+        <#nurse_acocci>
+            a fse:nurse ;
+            foaf:firstName "Aldino" ;
+            foaf:lastName "Cocci" ;
+            foaf:birthday "15/12/1988" ;
+            fse:belongsTo <tag:stardog:api:#ausl> .
+        <#nurse_gvanni>
+            a fse:nurse ;
+            foaf:firstName "Giorgio" ;
+            foaf:lastName "Vanni" ;
+            foaf:birthday "15/02/1985" ;
+            fse:belongsTo <tag:stardog:api:#ssn> .
+        <#nurse_cvanto>
+            a fse:nurse ;
+            foaf:firstName "Camilla" ;
+            foaf:lastName "Vanto" ;
+            foaf:birthday "23/03/1980" ;
+            fse:belongsTo <tag:stardog:api:#auser> .
+        <#nurse_mroccia>
+            a fse:nurse ;
+            foaf:firstName "Michele" ;
+            foaf:lastName "Roccia" ;
+            foaf:birthday "12/10/1984" ;
+            fse:belongsTo <tag:stardog:api:#auser> .
+        # -------------------------
+        # HEALTH ORGANIZATIONS
+        # -------------------------
+        <#ordinemedici>
+            a fse:healthOrganization ;
+            org:identifier "Ordine dei Medici Chirurghi e Odontoiatri Italiana" ;
+            org:hasSite <tag:stardog:api:#ufficiodoctor_abarese> ;
+            org:hasSite <tag:stardog:api:#ufficiodoctor_cbelotti> .
+        <#ausl>
+            a fse:healthOrganization ;
+            org:identifier "Azienda Unità Sanitaria Locale" ;
+            org:hasSite <tag:stardog:api:#sedeauslfc> ;
+            org:hasSite <tag:stardog:api:#sedelegaleusl> .
+        <#aifa>
+            a fse:healthOrganization ;
+            org:identifier "Agenzia Italiana del Farmaco" ;
+            org:hasSite <tag:stardog:api:#sedeaifa> .
+        <#auser>
+            a fse:healthOrganization ;
+            org:identifier "Associazione per l'invecchiamento attivo" ;
+            org:hasSite <tag:stardog:api:#rsabellora> ;
+            org:hasSite <tag:stardog:api:#rsamonsavano> .
+        <#ssn>
+            a fse:healthOrganization ;
+            org:identifier "Servizio Sanitario Nazionale" ;
+            org:hasSite <tag:stardog:api:#ospedalembufalini> ;
+            org:hasSite <tag:stardog:api:#ospedalesanraffaele> .
+        # -------------------------
+        # HEALTHCARE FACILITY
+        # -------------------------
+        <#sedeauslfc>
+            a fse:healthcareFacility ;
+            org:siteAddress "Via della Rocca, 19 - Forlì" .
+        <#sedelegaleusl>
+            a fse:healthcareFacility ;
+            org:siteAddress "Via Castiglione, 29 -Bologna" .
+        <#ospedalembufalini>
+            a fse:healthcareFacility ;
+            org:siteAddress "Viale Giovanni Ghirotti, 286 - Cesena" .
+        <#ospedalesanraffaele>
+            a fse:healthcareFacility ;
+            org:siteAddress "Via Olgettina, 60 - Milano" .
+        <#ufficiodoctor_cbelotti>
+            a fse:healthcareFacility ;
+            org:siteAddress "Via dell'Acquedotto, 31 - Perugia" .
+        <#ufficiodoctor_abarese>
+            a fse:healthcareFacility ;
+            org:siteAddress "Via Cervese, 1 - Forlì" .
+        <#sedeaifa>
+            a fse:healthcareFacility ;
+            org:siteAddress "Via del Tritone, 181 - Roma" .
+        <#rsabellora>
+            a fse:healthcareFacility ;
+            org:siteAddress "Piazza Giovine Italia, 1 - Gallarate" .
+        <#rsamonsavano>
+            a fse:healthcareFacility ;
+            org:siteAddress "Via Fortuna, 1 - San Francesco" .
+        # -------------------------
+        # LABORATORIES
+        # -------------------------
+        <#lab_bianalisi>
+            a fse:laboratory ;
+            org:siteAddress "Via Maceri, 12 - Forlì" .
+        <#lab_pavese>
+            a fse:laboratory ;
+            org:siteAddress "Via Pavese, 410 - Roma" .
+        <#lab_synlab>
+            a fse:laboratory ;
+            org:siteAddress "Via Zuccherificio, 153 - Cesena" .
+
+    }
+}

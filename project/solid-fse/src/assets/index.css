@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+a {
+  text-decoration: underline;
+}
+
+a.active {
+  @apply text-blue-400;
+}
+
+#app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  @apply bg-gray-800;
+}
+
+.page {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  min-width: 750px;
+}
+
+@layer components {
+
+  .btn { @apply
+    bg-blue-400
+    text-gray-700 font-semibold
+    border-2 border-blue-400
+    focus:border-blue-300
+    px-4 py-2 rounded-lg
+    disabled:bg-gray-500 disabled:border-gray-500
+    disabled:pointer-events-none;
+  }
+
+  .btn.inverted { @apply
+    bg-gray-200 border-gray-200 focus:border-gray-400;
+  }
+
+  .input { @apply
+    bg-gray-700
+    text-white
+    px-4 p-2 rounded-lg
+    outline-none
+    border-2 border-gray-700
+    focus:border-gray-600;
+  }
+
+  .divider { @apply
+    h-[2px] w-full bg-gray-600;
+  }
+
+}
+
+@layer utilities {
+
+  .absolute-center { @apply
+    absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;
+  }
+
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  min-width: 120px;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 10px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #60a5fa transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
