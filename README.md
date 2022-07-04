@@ -24,7 +24,7 @@
     Le ontologie dron e loinc contengono una quantità elevata di dati. In caso di problemi nell'importazione è possibile utilizzare il sistema anche senza di esse con alcune funzionalità limitate oppure è possibile importare da [ontologies/external](ontologies/external) solo una porzione di queste.
 
   - Creare un nuovo model con nome `fse` e IRI `https://fse.ontology`
-  - Sostituire il contenuto della sezione **Text Editor** con quello del file [fse.ontology.ttl](ontologies/fse.ontology.ttl) nella repository.
+  - Sostituire il contenuto della sezione **Text Editor** con quello del file [fse.ontology.ttl](ontologies/stardog/fse.ontology.ttl) nella repository (che non include regole SWRL).
   - *Opzionale*: per inserire alcuni dati nell'ontologia è possibile eseguire la query contenuta nel file [insert-data-fse.rq](project/insert-data-fse.rq) nella repository
 - Aprire un terminale nella cartella `solid-fse` della repository e utilizzare i seguenti comandi
   ```bash

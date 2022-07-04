@@ -43,7 +43,7 @@ INSERT DATA {
             a fse:laboratoryMedicineReport ;
             fse:languageCode "it-IT" ;
             fse:realmCode "IT" ;
-            fse:hasCode <loinc:11502-2> ;
+            fse:hasCode loinc:11502-2 ;
             fse:versionNumber 1 ;
             fse:confidentialityLevel <tag:stardog:api:Normal> ;
             fse:refersTo <tag:stardog:api:#CSTBRN86H62G273H> ;
@@ -139,7 +139,7 @@ INSERT DATA {
 
         <#pss_vpinto>
             a fse:summaryHealthProfile ;
-            fse:hasCode <loinc:60591-5> ;
+            #fse:hasCode <loinc:60591-5> ;
             fse:body "Profilo Sanitario Sintetico paziente V. Pinto" ;
             fse:languageCode "it-IT" ;
             fse:realmCode "IT" ;
@@ -195,7 +195,7 @@ INSERT DATA {
             fse:realmCode "IT" ;
             fse:versionNumber 1 ;
             fse:confidentialityLevel <tag:stardog:api:Normal> ;
-            fse:hasDiagnosis <obo:NCIT_C18020> ;
+            fse:hasDiagnosis obo:NCIT_C18020 ;
             fse:refersTo <tag:stardog:api:#CLBDLA93S07D969X> ;
             fse:hasHumanAuthor <tag:stardog:api:#doctor_aarcuri> ;
             fse:hasCustodian <tag:stardog:api:#ausl> ;
@@ -291,7 +291,7 @@ INSERT DATA {
             fse:title "Asma estrinseco" ;
             #fse:hasCode <loinc:48765-2> ;
             # fse:includesAllergy <obo:DOID_0060532> ;
-            fse:includesAllergy <obo:DOID_0080811> ;
+            fse:includesAllergy obo:DOID_0080811 ;
             fse:start "2022-02-02T07:35:58"^^xsd:dateTime ;
             fse:end "2022-02-02T14:35:58"^^xsd:dateTime .
         
@@ -410,7 +410,7 @@ INSERT DATA {
             fse:title "Prestazioni" ;
             fse:body "" ;
             #fse:hasCode <loinc:62387-6> ;
-            fse:hasProcedure <obo:NCIT_C15329> .
+            fse:hasProcedure obo:NCIT_C15329 .
         
         <#os_report_rossi>
             a fse:osReport ;
@@ -423,7 +423,7 @@ INSERT DATA {
             fse:title "Prestazioni" ;
             fse:body "" ;
             #fse:hasCode <loinc:62387-6> ;
-            fse:hasProcedure <obo:NCIT_C18020> .
+            fse:hasProcedure obo:NCIT_C18020 .
         
         <#os_report_acalabrese>
             a fse:osReport ;
@@ -435,7 +435,7 @@ INSERT DATA {
         # -------------------------
         <#observation_costa>
             a fse:observation ;
-            fse:hasSymptom <obo:SYMP_0000550> ;
+            fse:hasSymptom obo:SYMP_0000550 ;
             #fse:hasCode <loinc:57833-6> ;
             fse:body "" ;
             fse:statusCode "Completed" .
